@@ -5,16 +5,17 @@ import './CardPost.css'
 
 const CardPost = (props) => {
   const { name, width, posts } = props
-  
+
+
   const showPost = () => {
     console.log("inside showPost", posts)
     const postsHTML = []
     if(posts && posts.length > 0) {
       console.log("before hi")
       posts.forEach(element => {
-        const {title, datePublished, message} = element
+        const {title, datePublished, message, id} = element
         
-        postsHTML.push(<div><a  href= "#" className="post-data">{title}</a><div className="post-data">{datePublished}</div>
+        postsHTML.push(<div><a href={`/ipubpost?id=${id}`} className="post-data">{title}</a><div className="post-data">{datePublished}</div>
         <div className="post-data">{message}</div></div>)
         
       })

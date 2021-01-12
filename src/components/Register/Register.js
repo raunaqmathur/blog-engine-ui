@@ -5,7 +5,7 @@ import Button from '../UI/Button/Button'
 import './Register.css'
 
 const Register = (props) => {
-
+  console.log("key ********* :" + props.location.state.key)
   const [success, setSuccess] = useState(false);
   const [message, setMessage] = useState("");
   const [redirect, seRedirect] = useState();

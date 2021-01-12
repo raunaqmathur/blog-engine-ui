@@ -9,7 +9,8 @@ import { render } from '@testing-library/react'
 const Login = () => {
 
   const [success, setSuccess] = useState(false);
-  const [redirect, seRedirect] = useState();
+  const [redirect, setRedirect] = useState();
+  
   const onSubmit = (event) => {
     event.preventDefault();
     const {userName, password} = event.target
@@ -24,20 +25,20 @@ const Login = () => {
       })
      }) .then(res => res.json())
         .then((data) => {
-          console.log("sigINDATA******************* ", data.code)
+          console.log("sigINDATA******************* ", data)
           if(data.code){
             setSuccess(true);
           }
           else {
             setSuccess(false);
-            seRedirect(1);
+            setRedirect(1);
+            sessionStorage.setItem("userName", data.userName)
           }
         })
         .catch(console.log)
   };
 
-  if(!success && redirect == 1) {
-    console.log("inside success******************* ", success)
+  if(!success && redirect == 1) {    
     return <Redirect to="/" />
   }
   

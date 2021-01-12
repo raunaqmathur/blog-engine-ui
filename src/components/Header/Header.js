@@ -12,7 +12,8 @@ const Header = (props) => {
       </nav>
       {/* <div> */}
       <nav className="header-nav">
-        <a href="/login">Login</a>
+        {!sessionStorage.getItem("userName") && <a href="/login">Login</a>}
+        {sessionStorage.getItem("userName") && <a href="/logout">Logout</a>}
         {/* <HeaderNav /> */}
       </nav>
       {/* </div> */}

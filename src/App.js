@@ -8,13 +8,16 @@ import Header from './components/Header/Header'
 import HeaderLogo from './components/HeaderLogo/HeaderLogo';
 import './App.css'
 import Login from './components/Login/Login';
-import Login2 from './components/Login/Login2';
+import Logout from './components/Logout/Logout';
+import IPubPost from './components/IPubPost/IPubPost';
+
 
 import Register from './components/Register/Register';
 
 const App = () => {
   return (
     <Router>
+      <Switch>
       <div className="App">
         <Header />
         <HeaderLogo />
@@ -23,8 +26,11 @@ const App = () => {
         <Route path="/about-us" component={AboutUs} />
         <Route path="/contact-us" component={ContactUs} />
         <Route path="/login" component={Login} />
+        <Route path="/logout" component={Logout} />
         <Route path="/register" component={Register} />
+        <Route path="/ipubpost" component={IPubPost} />
       </div>
+      </Switch>
     </Router>
   );
 };
