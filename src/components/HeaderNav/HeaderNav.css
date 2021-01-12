@@ -1,0 +1,36 @@
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  /* float:right; */
+}
+
+.header-nav img {
+  width: 20px;
+  height: 20px;
+}
+
+.search form{
+  display: flex;
+  justify-content: space-between;
+  float:right;
+  margin: 0 10px;
+}
+
+.search-input {
+  border:0;
+  width:0;
+  transition: width 0.2s ease-in;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-input.active {
+  width: 100px;
+}
+
+.search-image {
+  cursor: pointer;
+}

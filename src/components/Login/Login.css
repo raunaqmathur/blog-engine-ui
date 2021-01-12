@@ -1,0 +1,36 @@
+.login-container {
+  /* background-color: rgb(240, 239, 239); */
+  background-color:#fff;
+  margin: 0 auto;
+  width: 400px;
+  height: 450px;
+  padding-top: 50px;
+  margin-top:50px;
+  border: 1px solid rgb(244, 243, 243)
+}
+
+.login-container a {
+  text-decoration: none;
+  cursor: pointer;
+}
+/* .login-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  float:left;
+} */
+
+.login-text {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.button {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-content: center;
+}
