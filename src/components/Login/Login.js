@@ -1,13 +1,15 @@
 import React,{useEffect, useState}  from 'react'
+import {Link, Redirect}  from 'react-router-dom'
 import Textbox from '../UI/TextBox/Textbox'
 import Button from '../UI/Button/Button'
 import './Login.css'
+import { render } from '@testing-library/react'
 
 
 const Login = () => {
 
   const [success, setSuccess] = useState(false);
-
+  const [redirect, seRedirect] = useState();
   const onSubmit = (event) => {
     event.preventDefault();
     const {userName, password} = event.target
@@ -28,11 +30,17 @@ const Login = () => {
           }
           else {
             setSuccess(false);
+            seRedirect(1);
           }
         })
         .catch(console.log)
   };
- 
+
+  if(!success && redirect == 1) {
+    console.log("inside success******************* ", success)
+    return <Redirect to="/" />
+  }
+  
   return (
     
     <div className="login-container">
