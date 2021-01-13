@@ -55,7 +55,7 @@ const Login = () => {
         </div>
         <form onSubmit={onSubmit}>
           <div>
-            <Textbox text="Email" type="text" id="userName" />
+            <Textbox text="Username" type="text" id="userName" />
             <Textbox text="Password" type="password" id="password" />    
           </div>
           <div className="button">
