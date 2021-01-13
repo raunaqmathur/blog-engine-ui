@@ -29,7 +29,6 @@ const IUnPubPost = (props) => {
   const onSave = (event) => {
     event.preventDefault();
     const {message, title} = event.target
-
     fetch('http://localhost:8080/post/update', {
       method: 'post',
       headers: {'Content-Type':'application/json'},
@@ -64,27 +63,37 @@ const IUnPubPost = (props) => {
     setRedirect(1)
   }
 
+  const onTitleChange = (event) => {
+    const {message, value} = event.target
+    console.log(" I am in onTitleChange: " + value)
+    setTitleText(value)
+  }
+
+  const onMessageChange = (event) => {
+    const {value} = event.target
+    console.log(" I am in oneMessageChange: " + value)
+    setMessageText(value)
+  }
+
   if(redirect == 1) {    
     return <Redirect to="/" />
   }
 
   return (
     <div>
+      <form onSubmit={onSave}>
         <div className="iunpub-container">
             <div className="iunpub-content">
-              {/* <input type="text" id="title"  readOnly="true" defaultValue={title}/>
-              <input type="text" id="message"  readOnly="true" defaultValue={message}/> */}
-              <textarea class="scrollabletextbox" name="title" id="title" className="iunpub-text-area-title" value={titleText}/>
-              <textarea class="scrollabletextbox" name="message" id="message" className="iunpub-text-area-message" value={messageText}/>
-              {/* <Textbox text="title" type="text" id="title" value={titleText} />  
-              <Textbox text="message" type="text" id="message" value={messageText} />    */}
+              <textarea class="scrollabletextbox" name="title" id="title" className="iunpub-text-area-title" value={titleText} onChange={onTitleChange} />
+              <textarea class="scrollabletextbox" name="message" id="message" className="iunpub-text-area-message" value={messageText} onChange={onMessageChange} />
             </div>
             <div className="button-container">
-              <button className="button" value="saveButton" id="saveButton" onClick={onSave} >Save</button>
+              <input type="submit" className="button" value="Save" id="saveButton" />
               <button className="button" value="cancelButton" id="cancelButton" onClick={onCancel} >Cancel</button>
               <button className="button" value="publishButton" id="publishButton" onClick={onPublish} >Publish</button>
             </div>
-        </div>        
+        </div> 
+      </form>       
     </div>
   );
 }
