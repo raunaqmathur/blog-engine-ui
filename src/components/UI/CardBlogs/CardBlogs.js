@@ -7,13 +7,12 @@ const CardBlogs = (props) => {
   const { width, blogs } = props
   
   const showBlogs = () => {
-    console.log("inside showBlogs", blogs)
     const blogsHTML = []
     if(blogs && blogs.length > 0) {
-      console.log("before hi")
       blogs.forEach(element => {
-        const {name} = element
-        blogsHTML.push(<div><a  href= "#" className="blogs-data">{name}</a></div>)
+        const {name, userResponse ={}} = element
+        const { userName } = userResponse
+        blogsHTML.push(<div><a  href={`/otherblog?userName=${userName}`} className="blogs-data">{name}</a></div>)
       })
     }
     return <div>{blogsHTML}</div>

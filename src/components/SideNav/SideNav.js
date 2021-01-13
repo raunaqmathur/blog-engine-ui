@@ -21,7 +21,7 @@ const SideNav = (props) => {
   console.log("blogs1", blogs)
 
   return (
-    <CardBlogs name="first Post" width="27%" blogs={blogs}></CardBlogs>
+    <CardBlogs width="27%" blogs={blogs}></CardBlogs>
   );
 }
 export default SideNav;

@@ -1,5 +1,5 @@
 import React,{useEffect}  from 'react'
-import {Link, Redirect}  from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 import Textbox from '../UI/TextBox/Textbox'
 import Button from '../UI/Button/Button'
 import './Logout.css'
@@ -12,13 +12,9 @@ const Logout = () => {
     sessionStorage.removeItem("userName")
   }, []);
 
-  alert("Successfully Logout")  
+  alert("Successfully Logged")  
   return <Redirect to="/" />
- 
-  
-  // return (
-  //   <div></div>
-  // );
+
 }
 
 export default Logout

@@ -1,0 +1,11 @@
+/* .blog-post{
+  width: 70%;
+  background-color: #fff;
+} */
+.button {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-content: center;
+}

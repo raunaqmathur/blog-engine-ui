@@ -5,17 +5,16 @@ import Button from '../UI/Button/Button'
 import './Register.css'
 
 const Register = (props) => {
-  console.log("key ********* :" + props.location.state.key)
   const [success, setSuccess] = useState(false);
   const [message, setMessage] = useState("");
   const [redirect, seRedirect] = useState();
 
   const onSubmit = (event) => {
     event.preventDefault();
-    const {userName, password, firstName, lastName, email} = event.target
+    const {userName, password, firstName, lastName, email, blogName} = event.target
 
     console.log("I am in Register onclick function - " + userName.value + ", " + password.value
-    + firstName.value + ", " + lastName.value + email.value);
+    + firstName.value + ", " + lastName.value + email.value + ", " + blogName.value) ;
     fetch('http://localhost:8080/register', {
       method: 'post',
       headers: {'Content-Type':'application/json'},
@@ -24,7 +23,9 @@ const Register = (props) => {
           "lastName" : lastName.value,
           "userName" : userName.value,
           "password" : password.value,
-          "email" : email.value
+          "email" : email.value,
+          "blogName":blogName.value,
+          "website": "website"
       })
      }) .then(res => res.json())
         .then((data) => {
@@ -65,6 +66,7 @@ const Register = (props) => {
             <Textbox id="lastName" text="Last Name" type="text" />
             <Textbox id="userName" text="UserName" type="text" />
             <Textbox id="email" text="Email" type="text" />
+            <Textbox id="blogName" text="Blog Name" type="text" />
             <Textbox id="password" text="Password" type="password" />
             <div className="button">
                 <input type="submit" value="Register" id="register"/>

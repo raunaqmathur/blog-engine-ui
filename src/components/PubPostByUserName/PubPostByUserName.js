@@ -1,14 +1,16 @@
 import React, {useEffect, useState} from 'react';
-import './BlogPost.css'
+import './PubPostByUserName.css'
 import CardPost from '../UI/CardPost/CardPost';
 
-const BlogPost = (props) => {
-
+const PubPostByUserName = (props) => {
+  const { userName } = props
   const [publishedPosts, setPublishedPosts] = useState([])
-
+  let userId = sessionStorage.getItem("userName")
+  if(userName)
+    userId = userName
   useEffect(() => {
-    fetch('http://localhost:8080/post/getAllpublished', {
-      method: 'post',
+    fetch(`http://localhost:8080/post/user/getAllpublished?userName=${userId}`, {
+      method: 'get',
       headers: {'Content-Type':'application/json'}
      }) .then(res => res.json())
         .then((data) => {
@@ -22,7 +24,7 @@ const BlogPost = (props) => {
   }, []);
   console.log("publishedPosts1", publishedPosts)
   return (
-    <CardPost link="ipubpost" width="70%" posts={publishedPosts} />
+    <CardPost link="ipubpost" width="50%" posts={publishedPosts} />
   );
 }
-export default BlogPost;
+export default PubPostByUserName;

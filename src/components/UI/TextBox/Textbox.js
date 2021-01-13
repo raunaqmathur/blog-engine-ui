@@ -11,8 +11,7 @@ const Textbox = (props) => {
     value,
     type,
     text,
-    className,
-    disabled
+    className
   } = props
 
   return (
@@ -21,7 +20,6 @@ const Textbox = (props) => {
         type={type}
         value={value}
         id={id}
-        disabled={disabled}
         onChange={onChange}
         placeholder={text}
       />

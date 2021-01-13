@@ -7,6 +7,7 @@ const Header = (props) => {
     <header className="header">
       <nav className="header-nav">
         <a href="/">Home</a>
+        {sessionStorage.getItem("userName") && <a href="/myblog">My Blog</a>}
         <a href="/about-us">About Us</a>
         <a href="/contact-us">Contact Us</a>
       </nav>

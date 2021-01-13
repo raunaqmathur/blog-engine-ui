@@ -4,7 +4,7 @@ import HeaderNav from '../../HeaderNav/HeaderNav';
 import './CardPost.css'
 
 const CardPost = (props) => {
-  const { name, width, posts } = props
+  const { link, width, posts } = props
 
 
   const showPost = () => {
@@ -15,7 +15,7 @@ const CardPost = (props) => {
       posts.forEach(element => {
         const {title, datePublished, message, id} = element
         
-        postsHTML.push(<div><a href={`/ipubpost?id=${id}`} className="post-data">{title}</a><div className="post-data">{datePublished}</div>
+        postsHTML.push(<div><a href={`/${link}?id=${id}`} className="post-data">{title}</a><div className="post-data">{datePublished}</div>
         <div className="post-data">{message}</div></div>)
         
       })
@@ -25,7 +25,6 @@ const CardPost = (props) => {
   
   return (
     <div className="card-post" style={{ width: width ? width : '100%' }}>
-      {name}
       {showPost()}
       {/* <Logo name="Blog Engine" /> */}
       {/* <HeaderNav /> */}

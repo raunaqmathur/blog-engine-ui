@@ -87,6 +87,13 @@ const IPubPost = (props) => {
         </form>
       </div>
     }
+    {!sessionStorage.getItem("userName") && 
+      <div>
+        <span>
+            <a href="/login"> Login</a> to comment
+          </span>
+      </div>
+    }
   </div>
   );
 }
