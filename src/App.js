@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useState }  from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './containers/Home/Home'
 import AboutUs from './containers/AboutUs/AboutUs'
@@ -13,17 +13,37 @@ import Login from './components/Login/Login';
 import Logout from './components/Logout/Logout';
 import IPubPost from './components/IPubPost/IPubPost';
 import IUnPubPost from './components/IUnPubPost/IUnPubPost';
-
+import themes from './utils/theme';
 
 
 import Register from './components/Register/Register';
 
 const App = () => {
+
+  const [theme, setTheme] = useState('');
+
+  const handleChange = (selectedTheme) => {
+    setTheme(themes[selectedTheme.value]);
+  };
+
+  const refCallback = (node) => {
+    if (node) {
+      theme &&
+        Object.keys(theme).forEach((element) => {
+          node.style.setProperty(element, theme[element], 'important');
+          if (element === 'background-color' || element === 'background') {
+            // apply the same background mentioned for theme to the body of the website
+            document.body.style.background = theme[element];
+          }
+        });
+    }
+  };
+
   return (
     <Router>
       <Switch>
-      <div className="App">
-        <Header />
+      <div ref={refCallback} className="App">
+        <Header handleChange={handleChange} />
         <HeaderLogo />
         {/* <Home /> */}
         <Route path="/" exact component={Home} />

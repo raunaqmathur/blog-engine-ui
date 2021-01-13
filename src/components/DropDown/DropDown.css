@@ -1,0 +1,21 @@
+.theme-dropdown {
+    max-width: 50px;
+    max-height: 10px;
+    margin: auto;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+  
+.theme-dropdown span {
+    display: block;
+    margin: 0 0 5px 0;
+}
+
+.dropdown-font {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    color: #565673;
+  }
