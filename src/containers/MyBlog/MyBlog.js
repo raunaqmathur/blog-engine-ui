@@ -50,8 +50,10 @@ const MyBlog = (props) => {
         <div>
           <form onSubmit={onSave}>
               <div>
-              <Textbox text="title" type="text" id="titleText"  />  
-              <Textbox text="message" type="text" id="messageText"  />   
+              <textarea class="scrollabletextbox" name="title" id="titleText" className="text-area-title" />
+              <textarea class="scrollabletextbox" name="message" id="messageText" className="text-area-message" />
+              {/* <Textbox text="title" type="text" id="titleText"  />  
+              <Textbox text="message" type="text" id="messageText"  />    */}
               </div>
               <div className="button">
                 <input type="submit" className="button" value="Save" id="saveButton" />

@@ -2,3 +2,37 @@
   width: 70%;
   background-color: #fff;
 } */
+
+/* .ipub-post-container {
+  background-color: #eee;
+} */
+
+.ipub-text-area-input {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ipub-textarea { 
+    width: 95%;
+    margin: 0 auto;
+}
+
+.comment-button {
+  background-color: #0073cf;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 7px 10px;
+  color: #fff;
+}
+
+.comments-section-heading {
+  width: 95%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.ipub-post-login {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 10px;
+}

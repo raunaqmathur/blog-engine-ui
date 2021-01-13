@@ -1,8 +1,57 @@
 .card-post {
   background: #fff;
-  width: 100%
+  width: 100%;
+  margin-right: 25px;
 }
 
 .post-data {
   padding-bottom: 5px;
+}
+
+.post-content {
+  border: solid 1px rgb(221, 219, 219);
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 20px;
+  background-color: rgb(240, 242, 245);
+  
+}
+
+.post-data {
+  background: #fff;
+}
+
+.post-title {
+  display:flex;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+ font-size: 54px;
+ font-family: 'Dancing Script', cursive;
+}
+
+.post-subtitle {
+  display:flex;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  color: #565673;
+}
+
+.post-description {
+  display:flex;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #242431;
+  text-align: justify;
+  text-justify: inter-cluster;
+  overflow: scroll;
 }

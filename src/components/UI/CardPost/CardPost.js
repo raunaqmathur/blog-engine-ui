@@ -15,19 +15,17 @@ const CardPost = (props) => {
       posts.forEach(element => {
         const {title, datePublished, message, id} = element
         
-        postsHTML.push(<div><a href={`/${link}?id=${id}`} className="post-data">{title}</a><div className="post-data">{datePublished}</div>
-        <div className="post-data">{message}</div></div>)
+        postsHTML.push(<div className="post-content"><a href={`/${link}?id=${id}`} className="post-title">{title}</a><div className="post-subtitle">{datePublished}</div>
+        <div className="post-description">{message}</div></div>)
         
       })
     }
-    return <div>{postsHTML}</div>
+    return <div className="post-container">{postsHTML}</div>
   }
   
   return (
     <div className="card-post" style={{ width: width ? width : '100%' }}>
       {showPost()}
-      {/* <Logo name="Blog Engine" /> */}
-      {/* <HeaderNav /> */}
     </div>
   );
 }

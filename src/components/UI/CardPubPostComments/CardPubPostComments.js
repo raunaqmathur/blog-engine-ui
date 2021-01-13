@@ -14,9 +14,10 @@ const CardPubPostComments = (props) => {
       comments.forEach(element => {
         const { dateCreated, message, user={} } = element
         const { userName } = user
-        postsHTML.push(<div>{message}
-        <div className="pub-post-comments-data">posted on: {dateCreated}</div>
-        <div className="pub-post-comments-data">by: {userName}</div></div>
+        postsHTML.push(<div className="card-pub-post-comments-content">
+        <div className="card-pub-post-comment">{message}</div>
+        <div className="card-pub-post-comment-subtitle">posted on: {dateCreated}</div>
+        <div className="card-pub-post-comment-subtitle">by: {userName}</div></div>
         )
         
       })

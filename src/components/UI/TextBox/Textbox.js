@@ -22,6 +22,7 @@ const Textbox = (props) => {
         id={id}
         onChange={onChange}
         placeholder={text}
+        className={className}
       />
     </div>
   )

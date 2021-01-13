@@ -13,13 +13,17 @@
   text-decoration: none;
   cursor: pointer;
 }
-/* .login-content {
+
+.login-content {
+  width: 380px;
+  height: 430px;
+  background-color: #e9eaed;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
-  float:left;
-} */
+  flex-direction: column;
+  margin: 0 auto;
+
+}
 
 .login-text {
   display: flex;

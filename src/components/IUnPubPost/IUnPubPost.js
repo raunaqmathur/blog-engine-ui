@@ -70,14 +70,16 @@ const IUnPubPost = (props) => {
 
   return (
     <div>
-        <div>
-            <div>
+        <div className="iunpub-container">
+            <div className="iunpub-content">
               {/* <input type="text" id="title"  readOnly="true" defaultValue={title}/>
               <input type="text" id="message"  readOnly="true" defaultValue={message}/> */}
-              <Textbox text="title" type="text" id="title" value={titleText} />  
-              <Textbox text="message" type="text" id="message" value={messageText} />   
+              <textarea class="scrollabletextbox" name="title" id="title" className="iunpub-text-area-title" value={titleText}/>
+              <textarea class="scrollabletextbox" name="message" id="message" className="iunpub-text-area-message" value={messageText}/>
+              {/* <Textbox text="title" type="text" id="title" value={titleText} />  
+              <Textbox text="message" type="text" id="message" value={messageText} />    */}
             </div>
-            <div className="button">
+            <div className="button-container">
               <button className="button" value="saveButton" id="saveButton" onClick={onSave} >Save</button>
               <button className="button" value="cancelButton" id="cancelButton" onClick={onCancel} >Cancel</button>
               <button className="button" value="publishButton" id="publishButton" onClick={onPublish} >Publish</button>

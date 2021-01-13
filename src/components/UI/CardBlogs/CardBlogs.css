@@ -1,8 +1,24 @@
 .card-blogs {
   background: #fff;
-  width: 100%
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  overflow: auto;
 }
 
 .blogs-data {
-  padding-bottom: 5px;
+  padding: 20px 0px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.blogs-content {
+  border: solid 1px rgb(221, 219, 219);
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 20px;
+  background-color: rgb(240, 242, 245);
 }

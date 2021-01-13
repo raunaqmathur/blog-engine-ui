@@ -67,28 +67,30 @@ const IPubPost = (props) => {
 
   return (
     <div>
-      <div>
+      <div className="ipub-post-container">
         <CardPubPost width="100%" post={publishedPostData} />
       </div>
       <div>
+      <div className="comments-section-heading">Comments</div>
       <CardPubPostComments width="100%" comments={commentList}/>
     </div>
     {sessionStorage.getItem("userName") && 
       <div>
         <form onSubmit={onSubmit}>
           <div>
-              <div>
-              <Textbox text="Comment" type="text" id="commentText" />   
+              <div className="ipub-textarea">
+              <textarea class="scrollabletextbox" name="note" id="commentText" className="ipub-text-area-input" />
+              {/* <Textbox text="Comment" type="text" id="commentText" className="ipub-text-input" />    */}
               </div>
               <div className="button">
-                <input type="submit" value="Comment" id="commentButton"/>
+                <input type="submit" value="Comment" id="commentButton" className="comment-button"/>
               </div>
           </div>
         </form>
       </div>
     }
     {!sessionStorage.getItem("userName") && 
-      <div>
+      <div className="ipub-post-login">
         <span>
             <a href="/login"> Login</a> to comment
           </span>

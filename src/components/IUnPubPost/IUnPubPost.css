@@ -4,6 +4,38 @@
 } */
 .button {
   padding: 10px;
+  display: inline-block;
+  margin: 0 10px;
+  background-color: #0073cf;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.iunpub-content {
+width: 95%;
+margin: 0 auto;
+}
+
+.iunpub-container {
+  margin-top: 30px;
+  }
+
+.iunpub-text-area-title {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.iunpub-text-area-message {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px 10px;
+}
+
+.button-container {
+  padding: 10px;
   display: flex;
   justify-content: center;
   margin: 0 auto;

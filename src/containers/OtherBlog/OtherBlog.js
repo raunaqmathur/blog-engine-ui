@@ -25,8 +25,8 @@ const OtherBlog = (props) => {
   return (
     <>
       <div>
-        <div>{name}</div>
-        <div>Author: {firstName}  {lastName}</div>
+        <div className="blog-header">{name}</div>
+        <div className="blog-author-text">Author: {firstName}  {lastName}</div>
       <section className="section">
         <PubPostByUserName  userName={queryParams.userName}/>
         <SideNav />

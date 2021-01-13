@@ -1,8 +1,36 @@
 .card-pub-post-comments {
   background: #fff;
-  width: 100%
+  width: 100%;
 }
 
 .pub-post-comments-data {
   padding-bottom: 5px;
+}
+
+.card-pub-post-comments-content {
+  border: solid 1px rgb(221, 219, 219);
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 20px;
+  background-color: rgb(240, 242, 245);
+  padding: 20px;
+}
+
+.card-pub-post-comment {
+  font-size: 16px;
+  text-align: center;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+}
+
+.card-pub-post-comment-subtitle {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  color: #565673;
 }

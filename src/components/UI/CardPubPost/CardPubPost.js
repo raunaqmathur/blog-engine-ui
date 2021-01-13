@@ -15,18 +15,17 @@ const CardPubPost = (props) => {
       const { title, datePublished, message, userResponse={} } = post   
       const { firstName, lastName } = userResponse      
 
-      return <div><div className="pub-post-data">{title}
-        <div className="pub-post-data">{message}</div>
-        <div className="pub-post-data">{datePublished}</div>
-        <div className="pub-post-data">{firstName} {lastName}</div>
-        </div>
+      return <div className="pub-post-content"><div className="pub-post-title">{title}</div>
+        <div className="pub-post-description">{message}</div>
+        <div className="pub-post-subtitle">{datePublished}</div>
+        <div className="pub-post-subtitle">{firstName} {lastName}</div>
         </div>
     }
     return <div>No Post to display</div>
   }
   
   return (
-    <div className="card-post" style={{ width: width ? width : '100%' }}>
+    <div className="card-pub-post" style={{ width: width ? width : '100%' }}>
       {showPost()}
       {/* <Logo name="Blog Engine" /> */}
       {/* <HeaderNav /> */}

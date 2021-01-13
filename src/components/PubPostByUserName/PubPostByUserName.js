@@ -24,7 +24,7 @@ const PubPostByUserName = (props) => {
   }, []);
   console.log("publishedPosts1", publishedPosts)
   return (
-    <CardPost link="ipubpost" width="50%" posts={publishedPosts} />
+    <CardPost link="ipubpost" width="80%" posts={publishedPosts} />
   );
 }
 export default PubPostByUserName;

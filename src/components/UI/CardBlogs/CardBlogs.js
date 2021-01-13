@@ -12,10 +12,10 @@ const CardBlogs = (props) => {
       blogs.forEach(element => {
         const {name, userResponse ={}} = element
         const { userName } = userResponse
-        blogsHTML.push(<div><a  href={`/otherblog?userName=${userName}`} className="blogs-data">{name}</a></div>)
+        blogsHTML.push(<div className="blogs-content"><a  href={`/otherblog?userName=${userName}`} className="blogs-data">{name}</a></div>)
       })
     }
-    return <div>{blogsHTML}</div>
+    return <div className="blogs-container">{blogsHTML}</div>
   }
   
   return (
