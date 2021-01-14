@@ -62,14 +62,14 @@ const Register = (props) => {
         </div>
         <form onSubmit={onSubmit}>
           <div>
-            <Textbox id="firstName" text="First Name" type="text" />
-            <Textbox id="lastName" text="Last Name" type="text" />
-            <Textbox id="userName" text="UserName" type="text" />
-            <Textbox id="email" text="Email" type="text" />
-            <Textbox id="blogName" text="Blog Name" type="text" />
-            <Textbox id="password" text="Password" type="password" />
-            <div className="button">
-                <input type="submit" value="Register" id="register"/>
+            <Textbox id="firstName" text="First Name" type="text" className="register-input-text" />
+            <Textbox id="lastName" text="Last Name" type="text" className="register-input-text"/>
+            <Textbox id="userName" text="UserName" type="text" className="register-input-text"/>
+            <Textbox id="email" text="Email" type="text" className="register-input-text"/>
+            <Textbox id="blogName" text="Blog Name" type="text" className="register-input-text"/>
+            <Textbox id="password" text="Password" type="password" className="register-input-text"/>
+            <div className="button-section">
+                <input type="submit" value="Register" id="register" className="button"/>
             </div>
             {success && <div>{message}</div>}
           </div>

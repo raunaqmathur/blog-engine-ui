@@ -3,7 +3,7 @@ import './PubPostByUserName.css'
 import CardPost from '../UI/CardPost/CardPost';
 
 const PubPostByUserName = (props) => {
-  const { userName } = props
+  const { userName, width } = props
   const [publishedPosts, setPublishedPosts] = useState([])
   let userId = sessionStorage.getItem("userName")
   if(userName)
@@ -24,7 +24,7 @@ const PubPostByUserName = (props) => {
   }, []);
   console.log("publishedPosts1", publishedPosts)
   return (
-    <CardPost link="ipubpost" width="80%" posts={publishedPosts} />
+    <CardPost link="ipubpost" width={width} posts={publishedPosts} name="Published Posts" />
   );
 }
 export default PubPostByUserName;

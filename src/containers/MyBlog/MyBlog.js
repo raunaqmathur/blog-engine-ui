@@ -43,21 +43,20 @@ const MyBlog = (props) => {
       <div>
       <section className="section">
         <UnPubPostByUserName />
-        <PubPostByUserName />
+        <PubPostByUserName width="50%"/>
       </section>
       
       {sessionStorage.getItem("userName") && 
         <div>
           <form onSubmit={onSave}>
               <div>
-              <textarea class="scrollabletextbox" name="title" id="titleText" className="text-area-title" />
-              <textarea class="scrollabletextbox" name="message" id="messageText" className="text-area-message" />
-              {/* <Textbox text="title" type="text" id="titleText"  />  
-              <Textbox text="message" type="text" id="messageText"  />    */}
+                <div className="new-post-heading">Create New Post</div>
+              <textarea class="scrollabletextbox" name="title" id="titleText" className="text-area-title" placeholder="Title" />
+              <textarea class="scrollabletextbox" name="message" id="messageText" className="text-area-message" placeholder="Description" />
               </div>
-              <div className="button">
-                <input type="submit" className="button" value="Save" id="saveButton" />
-                <button className="button" value="cancelButton" id="cancelButton" onClick={onCancel} >Cancel</button>
+              <div className="myblog-button-section">
+                <input type="submit" className="myblog-button" value="Save" id="saveButton" />
+                <button className="myblog-button" value="cancelButton" id="cancelButton" onClick={onCancel} >Cancel</button>
               </div>
           </form>
         </div>

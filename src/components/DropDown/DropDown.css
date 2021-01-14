@@ -1,21 +1,64 @@
 .theme-dropdown {
-    max-width: 50px;
+    /* max-width: 120px; */
     max-height: 10px;
-    margin: auto;
+    /* margin: auto; */
     color: #000;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
 }
   
 .theme-dropdown span {
     display: block;
-    margin: 0 0 5px 0;
+    /* margin: 0 0 5px 5px; */
+}
+
+.theme-text {
+    padding: 2px 5px 5px 5px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    color: #565673;
 }
 
 .dropdown-font {
     display: inline-block;
     margin: 0 10px;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 1.2px;
     text-decoration: none;
     color: #565673;
   }
+
+.select-filter {
+  width: 90px;
+  height: 20px;
+}
+.mySelect__value-container{
+height: 10px !important;
+min-height: 10px !important;
+}
+.mySelect__control{
+    height: 20px !important;
+    min-height: 20px !important;
+    /* width: 30px !important;
+    min-width: 30px !important; */
+}
+.mySelect__indicators{
+    height: 10px !important;
+    min-height: 10px !important;
+    padding-top: 5px !important;
+}
+.mySelect__input{
+    height: 10px !important;
+    min-height: 10px !important;
+}
+
+.mySelect__single-value{
+    height: 10px !important;
+    min-height: 10px !important;
+    padding-top: 14px !important;
+    padding-bottom: 13px !important;
+    padding-left: 0px !important;
+}

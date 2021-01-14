@@ -15,11 +15,13 @@ const DropDown = ({ handleChange }) => {
 
   return (
     <div className="theme-dropdown">
-      <span className="dropdown-font">Theme</span>
+      <span className="theme-text">Theme</span>   
       <Select
         className="select-filter"
         onChange={handleChange}
         options={options}
+        styles="select-filter"
+        classNamePrefix="mySelect"
       />
     </div>
   );

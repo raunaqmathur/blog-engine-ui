@@ -7,6 +7,16 @@
   background-color: #eee;
 } */
 
+.container {
+ background-color: #fff;
+}
+
+.ipub-post-container {
+  padding-top: 17px;
+     /* background-color: #eee; */
+    /* border: 1px solid red; */
+    margin-top: 18px;
+}
 .ipub-text-area-input {
   width: 100%;
   margin: 0 auto;
@@ -15,6 +25,7 @@
 .ipub-textarea { 
     width: 95%;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .comment-button {
@@ -28,11 +39,26 @@
 .comments-section-heading {
   width: 95%;
   margin: 0 auto;
+  padding-top: 30px;
   font-size: 18px;
+  text-decoration: underline;
 }
 
 .ipub-post-login {
   width: 95%;
   margin: 0 auto;
   margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.ipub-button-section {
+  margin-top: 30px;
+  width: 95%;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+.ipub-text-area-container {
+  padding-bottom: 20px;
 }

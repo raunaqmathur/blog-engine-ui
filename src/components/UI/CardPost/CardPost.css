@@ -55,3 +55,11 @@
   text-justify: inter-cluster;
   overflow: scroll;
 }
+
+.post-section-heading {
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-decoration: underline;
+}

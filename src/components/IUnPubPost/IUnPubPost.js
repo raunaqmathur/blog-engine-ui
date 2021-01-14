@@ -83,14 +83,15 @@ const IUnPubPost = (props) => {
     <div>
       <form onSubmit={onSave}>
         <div className="iunpub-container">
+          <div className="edit-post-heading">Edit Post</div>
             <div className="iunpub-content">
               <textarea class="scrollabletextbox" name="title" id="title" className="iunpub-text-area-title" value={titleText} onChange={onTitleChange} />
               <textarea class="scrollabletextbox" name="message" id="message" className="iunpub-text-area-message" value={messageText} onChange={onMessageChange} />
             </div>
-            <div className="button-container">
-              <input type="submit" className="button" value="Save" id="saveButton" />
-              <button className="button" value="cancelButton" id="cancelButton" onClick={onCancel} >Cancel</button>
-              <button className="button" value="publishButton" id="publishButton" onClick={onPublish} >Publish</button>
+            <div className="iunpub-button-container">
+              <input type="submit" className="iunpub-button" value="Save" id="saveButton" />
+              <button className="iunpub-button" value="cancelButton" id="cancelButton" onClick={onCancel} >Cancel</button>
+              <button className="iunpub-button" value="publishButton" id="publishButton" onClick={onPublish} >Publish</button>
             </div>
         </div> 
       </form>       

@@ -55,14 +55,14 @@ const Login = () => {
         </div>
         <form onSubmit={onSubmit}>
           <div>
-            <Textbox text="Username" type="text" id="userName" />
-            <Textbox text="Password" type="password" id="password" />    
+            <Textbox text="Username" type="text" id="userName" className="login-input-text" />
+            <Textbox text="Password" type="password" id="password" className="login-input-text" />    
           </div>
-          <div className="button">
-            <input type="submit" value="Login" id="login"/>
+          <div className="button-section">
+            <input type="submit" value="Login" id="login" className="button"/>
           </div>
           
-          {success && <div>Invalid</div>}
+          {success && <div className="login-error">Invalid username or password!</div>}
           
         </form>
       </div>

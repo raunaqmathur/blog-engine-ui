@@ -1,20 +1,20 @@
 const themes = {
-    default: {
+    light: {
       'background-color': ' #e9eaed',
       'color': '#000',
       'font-family': "'Open Sans', sans-serif"
     },
-    red: {
-      'background-color': '#dc6868',
+    fire: {
+      'background-color': '#fde5db',
       'color': '#yellow',
       'font-family': "'Courier New', Courier, monospace"
     },
-    black: {
-      'background-color': '#000',
-      'color': '#fff',
+    dark: {
+      'background-color': '#7b7a84',
+      'color': '#fff'
     },
-    white: {
-      'background-color': '#fff',
+    bright: {
+      'background-color': '#fff5d4',
       'color': '#847d7d',
       'font-family': 'Verdana, Geneva, Tahoma, sans-serif'
     }

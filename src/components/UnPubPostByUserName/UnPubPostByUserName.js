@@ -18,7 +18,7 @@ const UnPubPostByUserName = (props) => {
   }, []);
   
   return (
-    <CardPost link="iunpubpost" width="50%" posts={unPublishedPosts} />
+    <CardPost link="iunpubpost" width="50%" posts={unPublishedPosts} name="Unpublished Posts" />
   );
 }
 export default UnPubPostByUserName;

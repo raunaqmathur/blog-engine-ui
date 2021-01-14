@@ -32,7 +32,6 @@ const App = () => {
         Object.keys(theme).forEach((element) => {
           node.style.setProperty(element, theme[element], 'important');
           if (element === 'background-color' || element === 'background') {
-            // apply the same background mentioned for theme to the body of the website
             document.body.style.background = theme[element];
           }
         });

@@ -2,14 +2,19 @@
   width: 70%;
   background-color: #fff;
 } */
-.button {
-  padding: 10px;
+.iunpub-button {
+  padding: 5px 10px;
+  justify-content: center;
+  margin: 0 auto;
+  align-content: center;
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,.3);
+  width: 90px;
   display: inline-block;
-  margin: 0 10px;
   background-color: #0073cf;
   border-radius: 10px;
   font-size: 14px;
   color: #fff;
+  margin: 10px;
 }
 
 .iunpub-content {
@@ -34,10 +39,21 @@ margin: 0 auto;
   padding: 20px 10px;
 }
 
-.button-container {
+.iunpub-button-container {
   padding: 10px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
   align-content: center;
+  margin-top: 30px;
+  width: 90%;
+  align-items: center;
+}
+
+
+.edit-post-heading {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px 10px;
 }

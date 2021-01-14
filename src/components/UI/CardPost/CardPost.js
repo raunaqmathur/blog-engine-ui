@@ -4,7 +4,7 @@ import HeaderNav from '../../HeaderNav/HeaderNav';
 import './CardPost.css'
 
 const CardPost = (props) => {
-  const { link, width, posts } = props
+  const { link, width, posts, name } = props
 
 
   const showPost = () => {
@@ -24,7 +24,9 @@ const CardPost = (props) => {
   }
   
   return (
+    
     <div className="card-post" style={{ width: width ? width : '100%' }}>
+      <div className="post-section-heading">{name}</div>
       {showPost()}
     </div>
   );
