@@ -16,8 +16,6 @@ const MyBlog = (props) => {
     event.preventDefault();
     const {messageText, titleText} = event.target
     
-
-    console.log("I am in MyBlog onSave function - " + messageText.value + ", " + titleText.value);
     fetch('http://localhost:8080/post/create', {
       method: 'post',
       headers: {'Content-Type':'application/json'},

@@ -1,22 +1,12 @@
-/* .blog-post{
-  width: 70%;
-  background-color: #fff;
-} */
-
-/* .ipub-post-container {
-  background-color: #eee;
-} */
-
 .container {
- background-color: #fff;
+ background-color: #fcf8f8;
 }
 
 .ipub-post-container {
   padding-top: 17px;
-     /* background-color: #eee; */
-    /* border: 1px solid red; */
-    margin-top: 18px;
+  margin-top: 18px;
 }
+
 .ipub-text-area-input {
   width: 100%;
   margin: 0 auto;

@@ -7,7 +7,6 @@ const Card = (props) => {
   return (
     <div className="card">
       <Logo name="Blog Engine" />
-      {/* <HeaderNav /> */}
     </div>
   );
 }

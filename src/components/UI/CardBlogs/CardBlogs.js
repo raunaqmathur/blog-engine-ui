@@ -21,8 +21,6 @@ const CardBlogs = (props) => {
   return (
     <div className="card-blogs" style={{ width: width ? width : '100%' }}>
       {showBlogs()}
-      {/* <Logo name="Blog Engine" /> */}
-      {/* <HeaderNav /> */}
     </div>
   );
 }

@@ -27,8 +27,6 @@ const CardPubPost = (props) => {
   return (
     <div className="card-pub-post" style={{ width: width ? width : '100%' }}>
       {showPost()}
-      {/* <Logo name="Blog Engine" /> */}
-      {/* <HeaderNav /> */}
     </div>
   );
 }

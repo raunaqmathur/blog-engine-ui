@@ -13,8 +13,6 @@ const Register = (props) => {
     event.preventDefault();
     const {userName, password, firstName, lastName, email, blogName} = event.target
 
-    console.log("I am in Register onclick function - " + userName.value + ", " + password.value
-    + firstName.value + ", " + lastName.value + email.value + ", " + blogName.value) ;
     fetch('http://localhost:8080/register', {
       method: 'post',
       headers: {'Content-Type':'application/json'},
@@ -29,7 +27,6 @@ const Register = (props) => {
       })
      }) .then(res => res.json())
         .then((data) => {
-          console.log("RegisterDATA******************* ", data.code)
           if(data.code){
             setSuccess(true);
             setMessage(data.message)

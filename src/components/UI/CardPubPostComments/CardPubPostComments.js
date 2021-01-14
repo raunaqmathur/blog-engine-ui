@@ -28,8 +28,6 @@ const CardPubPostComments = (props) => {
   return (
     <div className="card-pub-post-comments" style={{ width: width ? width : '100%' }}>
       {showComments()}
-      {/* <Logo name="Blog Engine" /> */}
-      {/* <HeaderNav /> */}
     </div>
   );
 }

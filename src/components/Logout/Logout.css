@@ -1,5 +1,4 @@
 .login-container {
-  /* background-color: rgb(240, 239, 239); */
   background-color:#fff;
   margin: 0 auto;
   width: 400px;
@@ -14,13 +13,6 @@
   text-decoration: none;
   cursor: pointer;
 }
-/* .login-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  float:left;
-} */
 
 .login-text {
   display: flex;

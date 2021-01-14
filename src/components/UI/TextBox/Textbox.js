@@ -1,9 +1,7 @@
 import React from 'react';
 import './TextBox.css';
 
-const onChange = () => {
-
-}
+const onChange = () => {}
 
 const Textbox = (props) => {
   const {

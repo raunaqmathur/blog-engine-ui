@@ -23,18 +23,6 @@ const Button = (props) => {
       </button>
     </div>
   )
-  // return (
-  //   <div className="button">
-  //     <button
-  //       id="test"
-  //       onClick={handlerOnClick}
-  //       disabled={false}
-  //       type="submit"
-  //     >
-  //       Login
-  //   </button>
-  //   </div>
-  // )
 }
 
 export default Button

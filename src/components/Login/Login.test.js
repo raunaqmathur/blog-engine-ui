@@ -8,7 +8,6 @@ import 'mock-local-storage'
 configure({ adapter: new Adapter() });
 
 describe('Login', () => {
-
     it('Login form is loaded as expected', () => {
         sessionStorage.clear();
         const wrapper = shallow(<Login/>);

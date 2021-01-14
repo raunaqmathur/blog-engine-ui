@@ -5,9 +5,7 @@ import Button from '../UI/Button/Button'
 import './Login.css'
 import { render } from '@testing-library/react'
 
-
 const Login = () => {
-
   const [success, setSuccess] = useState(false);
   const [redirect, setRedirect] = useState();
   
@@ -42,8 +40,7 @@ const Login = () => {
     return <Redirect to="/" />
   }
   
-  return (
-    
+  return (    
     <div className="login-container">
       <div className="login-content">
         <div className="login-text">LOGIN</div>

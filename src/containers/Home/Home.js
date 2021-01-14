@@ -7,9 +7,6 @@ const Home = (props) => {
   return (
     <div>
       <Posts />
-      {/* <div>Header</div>
-      <div><Login /></div>
-      <div>Footer</div> */}
     </div>
   );
 };

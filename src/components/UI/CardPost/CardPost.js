@@ -32,6 +32,4 @@ const CardPost = (props) => {
   );
 }
 
-
-
 export default CardPost;

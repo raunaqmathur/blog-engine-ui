@@ -80,7 +80,6 @@ const IPubPost = (props) => {
           <div className="ipub-text-area-container">
               <div className="ipub-textarea">
               <textarea class="scrollabletextbox" name="note" id="commentText" className="ipub-text-area-input" placeholder="write comment here..." />
-              {/* <Textbox text="Comment" type="text" id="commentText" className="ipub-text-input" />    */}
               </div>
               <div className="ipub-button-section">
                 <input type="submit" value="Comment" id="commentButton" className="comment-button"/>

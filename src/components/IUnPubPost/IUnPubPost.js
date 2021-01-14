@@ -5,7 +5,6 @@ import './IUnPubPost.css'
 import Textbox from '../UI/TextBox/Textbox'
 
 const IUnPubPost = (props) => {
-
   const [unPublishedPostData, setUnPublishedPostData] = useState({})
   const [messageText, setMessageText] = useState("")
   const [titleText, setTitleText] = useState("")

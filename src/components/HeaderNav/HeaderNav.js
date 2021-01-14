@@ -13,7 +13,6 @@ const HeaderNav = (props) => {
     console.log("Hi");
     setSearchBox(true);
   }
-  // const searchInputClass = searchBox ? 'search-input active' : 'search-input';
   const searchInputClass = 'search-input active';
 
   return (

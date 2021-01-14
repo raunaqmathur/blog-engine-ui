@@ -1,17 +1,13 @@
 
-  
-    /* font-family: "sans-serif";
-    font-size: 40px; */
+  body {
+    background-color: #e9eaed;
+    font-family: 'Open Sans', sans-serif;
+  }
 
-    body {
-      background-color: #e9eaed;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    .App {
-      width: 90%;
-      margin: 0 auto;
-      border: 1px solid #d8d7d7;
-    }
+  .App {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #d8d7d7;
+  }
   
 

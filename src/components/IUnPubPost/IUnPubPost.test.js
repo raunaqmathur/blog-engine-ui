@@ -6,7 +6,6 @@ import { shallow, configure } from 'enzyme';
 configure({ adapter: new Adapter() });
 
 describe('IUnPubPost', () => {
-
     it('IUnPubPost form is loaded as expected', () => {
         const wrapper = shallow(<IUnPubPost location="search"/>);
         const form = wrapper.find('form');
@@ -15,7 +14,6 @@ describe('IUnPubPost', () => {
         const buttons = wrapper.find('button');
         expect(buttons).toHaveLength(2);
     });
-
 });
 
   

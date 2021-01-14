@@ -7,10 +7,6 @@ const HeaderLogo = (props) => {
   return (
     <div>
       <Card />
-      {/* <div style={{ padding: '50px 0' }}> */}
-      {/* <Logo name="Blog Engine" /> */}
-      {/* </div> */}
-      {/* </Card> */}
     </div>
   );
 }
